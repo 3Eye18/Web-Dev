@@ -1,0 +1,133 @@
+<html>
+    <script>
+        function myFunction(id, picture, link) {
+          document.getElementById(id).src = picture;
+          document.getElementById(link).href = picture;
+        }
+    </script>
+
+    <style>
+        .picture {
+            height: 125px;
+            width: 125px;
+            border: thin;
+        }
+
+        button {
+            height: 50px;
+            width: 60%;
+            margin: 12px;
+        }
+
+        .banner {
+            object-fit: contain;
+            height: 300px;
+            width: 100%;
+        }
+        
+       .div-box {
+            box-sizing: border-box;
+            border: 1px solid blue;
+            float: left
+        }
+
+        div1 {
+            background-color: rgb(50, 50, 226);
+            height: 300px;
+            width: 100%;
+        }
+
+        div2 {
+            background-color: rgb(158, 158, 201);
+            height: 500px;
+            width: 30%;
+            text-align: center;
+        }
+
+        div3 {
+            background-color: rgb(150, 214, 203);
+            height: 500px;
+            width: 70%;
+        }
+        
+        div4 {
+            background-color: rgb(50, 50, 226);
+            height: 100px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+
+    <body>
+        <div1 class="div-box">
+            <img class="banner" src="Other images/Honkai_Impact_3rd_logo.png">
+        </div1>
+
+        <div2 class="div-box">
+            <button class="button" onclick=
+                "myFunction('pic1', 'Kiana/Kiana1.png', 'link1');
+                myFunction('pic2', 'Kiana/Kiana2.png', 'link2')
+                myFunction('pic3', 'Kiana/Kiana3.png', 'link3')
+                myFunction('pic4', 'Kiana/Kiana4.png', 'link4')
+                myFunction('pic5', 'Kiana/Kiana5.png', 'link5')
+                myFunction('pic6', 'Kiana/Kiana6.png', 'link6')
+                myFunction('pic7', 'Kiana/Kiana7.png', 'link7')
+                myFunction('pic8', 'Kiana/Kiana8.png', 'link8')">Kiana
+            </button>
+            <button class="button" onclick=
+                "myFunction('pic1', 'Mei/Mei1.png', 'link1');
+                myFunction('pic2', 'Mei/Mei2.png', 'link2')
+                myFunction('pic3', 'Mei/Mei3.png', 'link3')
+                myFunction('pic4', 'Mei/Mei4.png', 'link4')
+                myFunction('pic5', 'Mei/Mei5.png', 'link5')
+                myFunction('pic6', 'Mei/Mei6.png', 'link6')
+                myFunction('pic7', 'Mei/Mei7.png', 'link7')
+                myFunction('pic8', 'Mei/Mei8.png', 'link8')">Mei
+            </button>
+            <button class="button" onclick=
+                "myFunction('pic1', 'Bronya/Bronya1.png', 'link1');
+                myFunction('pic2', 'Bronya/Bronya2.png', 'link2')
+                myFunction('pic3', 'Bronya/Bronya3.png', 'link3')
+                myFunction('pic4', 'Bronya/Bronya4.png', 'link4')
+                myFunction('pic5', 'Bronya/Bronya5.png', 'link5')
+                myFunction('pic6', 'Bronya/Bronya6.png', 'link6')
+                myFunction('pic7', 'Bronya/Bronya7.png', 'link7')
+                myFunction('pic8', 'Bronya/Bronya8.png', 'link8')">Bronya
+            </button>
+            <a target="_blank" href="about.html">
+                <button class="button">About</button>
+            </a>
+        </div2>
+
+        <div3 class="div-box">
+            <a id="link1" target="_blank" href="Kiana/Kiana1.png">
+                <img class="picture" id="pic1" src="Kiana/Kiana1.png">
+            </a>
+            <a id="link2" target="_blank" href="Kiana/Kiana2.png">
+                <img class="picture" id="pic2" src="Kiana/Kiana2.png">
+            </a>
+            <a id="link3" target="_blank" href="Kiana/Kiana3.png">
+                <img class="picture" id="pic3" src="Kiana/Kiana3.png">
+            </a>
+            <a id="link4" target="_blank" href="Kiana/Kiana4.png">
+                <img class="picture" id="pic4" src="Kiana/Kiana4.png">
+            </a>
+            <a id="link5" target="_blank" href="Kiana/Kiana5.png">
+                <img class="picture" id="pic5" src="Kiana/Kiana5.png">
+            </a>
+            <a id="link6" target="_blank" href="Kiana/Kiana6.png">
+                <img class="picture" id="pic6" src="Kiana/Kiana6.png">
+            </a>
+            <a id="link7" target="_blank" href="Kiana/Kiana7.png">
+                <img class="picture" id="pic7" src="Kiana/Kiana7.png">
+            </a>
+            <a id="link8" target="_blank" href="Kiana/Kiana8.png">
+                <img class="picture" id="pic8" src="Kiana/Kiana8.png">
+            </a>
+        </div3>
+
+        <div4 class="div-box">
+            Copyright
+        </div4>
+    </body>
+/<html>
