@@ -1,0 +1,20 @@
+<head>
+    <style>
+      #field1:focus {
+        background-color: lightblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input id="field1" type="text" value="Field 1">
+      <input id="field2" type="text" value="Field 2">
+    </form>
+    <script>
+      document.querySelector('#field1').addEventListener('blur', function() {
+        document.querySelector('#field2').value = 'Field 1 lost focus!';
+      });
+    </script>
+  </body>
+  
